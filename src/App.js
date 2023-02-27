@@ -3,8 +3,7 @@ import './App.css';
 import emailjs from '@emailjs/browser';
 
 function App() {
-
-    const [name, setName] = useState('')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
@@ -26,6 +25,7 @@ function sendEmail(e) {
     setName('')
     setEmail('')
     setMessage('')
+    alert("Mensagem enviada.")
 
   }, (err) => {
     console.log("ERRO: ", err)
@@ -33,9 +33,10 @@ function sendEmail(e) {
 }
 
   return (
-<div className="container">
-      <h1 className="title">Contato</h1>
-
+    <div className="container">
+      <div class="cols cols0">
+      <span class="topline">Me envie uma mensagem</span>     
+     </div>   
       <form className="form" onSubmit={sendEmail}>
         <input 
           className="input"
@@ -60,10 +61,11 @@ function sendEmail(e) {
           value={message}
         />
 
-        <input className="button" type="submit" value="Enviar" />
+        <input className="button" type="submit" value="" />
       </form>
+      </div>
 
-    </div>
+    
   );
 }
 
