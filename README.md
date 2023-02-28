@@ -1,5 +1,5 @@
 #
-<h1>Criação de Portfólio Pessoal</h1>
+<h1>React para envio de e-mail</h1>
 
  <p>  Link de acesso do projeto pela Vercel: https://envio-de-email-react.vercel.app/
 
